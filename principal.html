@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Integrador 1</title>
-    <!-- estilo interno para un párrafo existente -->
-    <style> p { color: green; } </style>
+    <!-- estilo interno para el primer párrafo con el uso de psudo-clases -->
+    <style> p:nth-child(1) { color: green; } </style>
     <link rel="stylesheet" href="miestilo.css">
 </head>
 <body>
     <header>
         <!-- Contenido del encabezado (header) -->
+        <img src="INVICO-logo.svg" class="card-img-top" alt="">
         <h1>Bienvenido a nuestra pagina principal</h1>
     </header>
     
-    <nav>
+    <nav class="main-menu">
         <!-- Contenido de la barra de navegación (nav) -->
         <ul>
             <li><a href="https://www.google.com/">Google</a></li>
@@ -23,7 +24,7 @@
         </ul>
     </nav>
     
-    <section>
+    <section class="bg">
         <!-- Contenido de la sección principal (section) -->
         <div class="home-paragraphs">
             <!-- se utiliza el mismo párrafo que Talentos Digitales -->
@@ -36,13 +37,16 @@
                 Aquí puesdes encontrar información sobre nuestra empresa y registrarte para recibir novedades
             </p>
         </div>
-        <div class="bg">
+        <div>
             <img src="home.jpg" alt="Hombres Trabajando">
         </div>
     </section>
     
     <footer>
         <!-- Contenido del pie de página (footer) -->
+        <p class="footer-content">
+            &copy; IN.VI.CO. 2024 Instituto de Vivienda de Corrientes | Diseñado y Desarrollado por Fernando S Corrales
+        </p>
     </footer>
 </body>
 </html>
